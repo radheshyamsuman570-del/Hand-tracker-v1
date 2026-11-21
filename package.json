@@ -1,0 +1,12 @@
+{
+  "name": "hand-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Real-time two-hand 21-landmark tracker (MediaPipe + WebGL + Web Worker). Static site.",
+  "scripts": {
+    "check": "for f in public/js/*.js; do node --check $f; done",
+    "test": "node --test test/*.test.mjs",
+    "serve": "python3 -m http.server 8080 --directory public"
+  }
+}
